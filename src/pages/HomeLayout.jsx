@@ -7,7 +7,9 @@ function HomeLayout() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <section className='page'>
+        <Outlet />
+      </section>
       <Footer />
     </>
   )
