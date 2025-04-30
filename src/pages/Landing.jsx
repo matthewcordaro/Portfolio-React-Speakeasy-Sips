@@ -10,8 +10,16 @@ const cocktailSearchUrl =
 export async function loader({ request }) {
   const url = new URL(request.url)
 
-  const commonLetters = ["e", "i", "n", "r", "t", "a", "s", "o", "l", "c"]
-  const randomLetter = commonLetters[Math.floor(Math.random() * 10)]
+  const commonDrinks = [
+    "Martini",
+    "Sour",
+    "Margarita",
+    "Mojito",
+    "Daiquiri",
+    "Negroni",
+  ]
+  const randomLetter =
+    commonDrinks[Math.floor(Math.random() * commonDrinks.length)]
 
   const searchTerm = url.searchParams.get("search") || randomLetter
   const fullUrl = cocktailSearchUrl + searchTerm
