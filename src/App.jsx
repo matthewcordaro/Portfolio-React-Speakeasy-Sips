@@ -8,6 +8,8 @@ import {
   Landing,
 } from "./pages"
 
+import { loader as landingLoader } from "./pages/Landing"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         index: true,
+        loader: landingLoader,
         element: <Landing />,
       },
       {
