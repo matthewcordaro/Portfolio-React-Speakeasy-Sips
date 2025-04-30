@@ -20,7 +20,7 @@ function CocktailList({ drinks }) {
   return (
     <Wrapper>
       {formattedDrinks.map((drink) => {
-        return <CocktailCard key={drink.id} drink={drink} />
+        return <CocktailCard key={drink.id} {...drink} />
       })}
     </Wrapper>
   )
