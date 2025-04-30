@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react"
+import Wrapper from "../assets/wrappers/ErrorPage"
 
 function Error() {
   return (
-    <div>Error</div>
+    <Wrapper>
+      <h1>Error</h1>
+    </Wrapper>
   )
 }
 

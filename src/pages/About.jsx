@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react"
+import Wrapper from "../assets/wrappers/AboutPage"
 
 function About() {
   return (
-    <div>About</div>
+    <Wrapper>
+      <h1>About</h1>
+    </Wrapper>
   )
 }
 

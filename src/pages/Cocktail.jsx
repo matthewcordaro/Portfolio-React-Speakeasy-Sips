@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react"
+import Wrapper from "../assets/wrappers/CocktailPage"
 
 function Cocktail() {
   return (
-    <div>Cocktail</div>
+    <Wrapper>
+      <h1>Cocktail</h1>
+    </Wrapper>
   )
 }
 
