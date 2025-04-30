@@ -15,6 +15,8 @@ export async function loader({ params }) {
 
 function Cocktail() {
   const { id, data } = useLoaderData()
+  if (!data) return <Navigate to='/' />
+  
   const singleDrink = data.drinks[0]
   const {
     strDrink: name,
