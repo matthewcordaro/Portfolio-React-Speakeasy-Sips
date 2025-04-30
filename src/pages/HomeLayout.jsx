@@ -1,8 +1,13 @@
-import React from 'react'
+import React from "react"
+import { Outlet } from "react-router-dom"
 
 function HomeLayout() {
   return (
-    <div>HomeLayout</div>
+    <div>
+      <nav>NAVBAR</nav>
+      <Outlet />
+      <footer>FOOTER</footer>
+    </div>
   )
 }
 
